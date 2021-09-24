@@ -41,5 +41,10 @@ public class SealController : MonoBehaviour
         animator.SetBool("flap", false);
     }
 
+    public void SetSteerActive(bool active)
+    {
+        rb.isKinematic = !active;
+    }
+
 
 }
